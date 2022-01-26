@@ -1,0 +1,17 @@
+list= ['JOE','is','a','good','boy']
+
+for i in list:
+    for j in i:
+        if j.isupper():
+            k=i
+new_list=list.copy()
+for i in range(len(list)):
+    new_list[i]=new_list[i].lower()
+#sorting logic
+x=sorted(new_list,key=lambda x:x)
+#logic to match the case property as fed in by the user
+for i in range(len(x)):
+    if x[i] == k.lower():
+        x[i]=k
+
+print(x)
